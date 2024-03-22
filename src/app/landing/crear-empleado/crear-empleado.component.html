@@ -1,0 +1,91 @@
+<div class="body">
+    <h1>CREAR EMPLEADO</h1>
+      <div class="app-crear-empleado">
+       
+        <mat-form-field>
+            <mat-label>Id empleado</mat-label>
+            <input matInput>
+          </mat-form-field>   
+          <mat-form-field>
+            <mat-label>Numero documento</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <h4>Tipo de documento</h4>
+          <mat-form-field>
+            <mat-label>elije </mat-label>
+            <select matNativeControl required>
+              <option value="Cedula">Cedula</option>
+              <option value="Pasaporte">Pasaporte</option>
+            </select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>apellido</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>telefono</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>direccion</mat-label>
+            <input matInput>
+          </mat-form-field>
+  
+        <mat-form-field class="dateLabel">
+          <mat-label>Fecha Ingreso</mat-label>
+          <input matInput [matDatepicker]="picker">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+  
+        <mat-form-field class="dateLabel2">
+          <mat-label>Fecha Retiro</mat-label>
+          <input matInput [matDatepicker]="picker2">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker2">
+            <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+          </mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+  
+        <h4>Tipo de contrato</h4>
+<mat-form-field>
+  <mat-label>elije </mat-label>
+  <select matNativeControl required>
+    <option value="Termino fijo">Termino fijo</option>
+    <option value="Indefinido">Indefinido</option>
+    <option value="Prestador Servicio">Prestador Servicio</option>
+  </select>
+</mat-form-field>
+        
+        <mat-form-field>
+          <mat-label>Estado</mat-label>
+          <input matInput>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Id supervisor</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Id Cargo</mat-label>
+            <input matInput>
+          </mat-form-field>
+          
+  
+  <section>
+    <div class="button">
+      <button mat-raised-button color="warn">Ingresar</button>
+    </div>
+  </section>
+  
+      </div>  
+    </div>
+  

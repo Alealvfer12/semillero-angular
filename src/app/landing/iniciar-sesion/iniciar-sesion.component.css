@@ -1,0 +1,14 @@
+.body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    
+}
+.iniciar-sesion{  
+   text-align: center;
+   
+
+}
+
+    

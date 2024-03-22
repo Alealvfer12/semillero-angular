@@ -1,0 +1,60 @@
+<div class="body">
+  <h1>CREAR SOLICITUD</h1>
+    <div class="app-crear-solicitud">
+     
+      <mat-form-field>
+        <mat-label>Id Solicitud</mat-label>
+        <input matInput>
+      </mat-form-field>   
+      <mat-form-field>
+        <mat-label>Dias solicitados</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+      <mat-form-field class="dateLabel">
+        <mat-label>Fecha Inicio</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="dateLabel2">
+        <mat-label>Fecha Fin</mat-label>
+        <input matInput [matDatepicker]="picker2">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker2">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="dateLabel3">
+        <mat-label>Fecha Retorna</mat-label>
+        <input matInput [matDatepicker]="picker3">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker3">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker3></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Estado</mat-label>
+        <input matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Observaciones</mat-label>
+        <input matInput>
+      </mat-form-field>
+
+<section>
+  <div class="button">
+    <button mat-raised-button color="warn">Ingresar</button>
+  </div>
+</section>
+
+    </div>  
+  </div>
